@@ -1,0 +1,35 @@
+.search-box {
+  padding: 32rpx;
+}
+
+.search-box .search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  border: 1px solid #333;
+  border-radius: 50rpx;
+}
+
+.search-box .search input {
+  margin: 0 32rpx;
+  flex: 1;
+  text-align: center;
+}
+
+.list {
+  padding: 0 32rpx;
+}
+
+.list .rows {
+  padding: 32rpx 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.list .rows .black {
+  color: #000;
+}
+
+.list .rows .red {
+  color: #f00;
+}

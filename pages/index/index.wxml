@@ -1,0 +1,17 @@
+<wxs src="../../utils/textHighLight.wxs" module="tool"></wxs>
+
+<view class="search-box">
+  <view class="search">
+    <input type="text" placeholder="文字高亮" value="{{inputValue}}" bindinput="handleInput" />
+  </view>
+</view>
+
+<view class="list">
+  <block wx:for="{{textList}}" wx:for-item="i" wx:for-index="ii" wx:key="index">
+    <view class="rows">
+      <block wx:for="{{i.text}}" wx:for-item="j" wx:for-index="ji" wx:key="index">
+        <text class="black {{tool.handleText(j,inputValue)?'red':''}}">{{j}}</text>
+      </block>
+    </view>
+  </block>
+</view>

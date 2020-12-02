@@ -1,0 +1,11 @@
+function handleText(str, inputValue) {
+  if (getRegExp(str, 'g').test(inputValue)) {
+    return true
+  } else {
+    return false
+  }
+}
+
+module.exports = {
+  handleText: handleText
+}
